@@ -52,7 +52,7 @@ function Dashboard() {
       <div>
         {posts.map((post) => {
           return (
-            <Message key={post.id} {...post}>
+            <Message key={post.id} {...post} >
               <div className="flex gap-4">
                 <button onClick={()=>console.log(deletePost(post.id))} className=" text-pink-600 flex items-center justify-center gap-2 py-2">
                   <BsTrash2Fill className="text-2xl" />
